@@ -1,5 +1,8 @@
 const prompt = require('prompt-sync')()
 let shoppingList = []
+let newItem = document.getElementById("input-el")
+let listButton = document.getElementById("button-el")
+let returnList = document.getElementById("list-el")
 
 function addItem(fnList, fnItem) {
     matchingItem = false
@@ -37,9 +40,19 @@ function displayList(fnList) {
     let filterList = fnList.filter(currentItem => currentItem.includes(searchItem));
     return filterList
  }
- shoppingList = ["apple", "banana", "appleton", "kiwi", "applebottom"]
- let mysearch = "apple"
- console.log(filteritems(shoppingList, mysearch))
+ listButton.addEventListener("click", function() {
+    taskText = newItem.value
+    let listItem = document.createElement("li")
+    listItem.innerText = taskText
+    shoppingList.appendChild(listItem)
+    taskInput.value = ""
+})
+
+
+
+//  shoppingList = ["apple", "banana", "appleton", "kiwi", "applebottom"]
+//  let mysearch = "apple"
+//  console.log(filteritems(shoppingList, mysearch))
 
 
 // let newItem = prompt("Enter a new item: ")
