@@ -32,20 +32,11 @@ let removeButton = document.getElementById("remove-el")
 
 // Task 2: Filter and Search an Array
 // function filteritems(fnList, searchItem) {
-//     // let lowerCaseITem = toLowerCase(searchItem)
-//     // let lowerCaseList = fnList.map(lowerCaseList >= {
-//     //     return element.toLowerCase()
-//     // })
-//     // let filterList = []
-//     // for (let i = 0; i < fnList.length; i++) {
-//     //     if (fnList[i] <= searchItem) {
-//     //         filterList.push(fnList[i])
-//     //     }
-//     //     return filterList
-//     // }
 //     let filterList = fnList.filter(currentItem => currentItem.includes(searchItem));
 //     return filterList
 // }
+
+// Task 3: Render the List in the Browser
 listButton.addEventListener("click", function () {
     let taskText = newItem.value;
 
@@ -60,16 +51,16 @@ listButton.addEventListener("click", function () {
     returnList.appendChild(listItem);
     newItem.value = ""; // Clear the input field
 });
-removeButton.addEventListener("click", function() {
+removeButton.addEventListener("click", function () {
     returnList.removeChild(returnList.lastChild)
 })
 
 
 
 // Used to make sure task one and two were complete
-//  shoppingList = ["apple", "banana", "appleton", "kiwi", "applebottom"]
-//  let mysearch = "apple"
-//  console.log(filteritems(shoppingList, mysearch))
+//   shoppingList = ["apple", "banana", "appleton", "kiwi", "applebottom"]
+//   let mysearch = "apple"
+//   console.log(filteritems(shoppingList, mysearch))
 
 
 // let newItem = prompt("Enter a new item: ")
