@@ -1,9 +1,12 @@
 // const prompt = require('prompt-sync')()
+// Used for testing -----------
 let newItem = document.getElementById("input-el");
 let listButton = document.getElementById("button-el");
 let returnList = document.getElementById("list-el");
 let removeButton = document.getElementById("remove-el")
 
+// Task 1: Array Manipulation Basics
+// let shoppingList = []
 // function addItem(fnList, fnItem) {
 //     matchingItem = false
 //     for (let i = 0; i < fnList.length; i++) {
@@ -27,6 +30,7 @@ let removeButton = document.getElementById("remove-el")
 //     console.log(fnList)
 // }
 
+// Task 2: Filter and Search an Array
 // function filteritems(fnList, searchItem) {
 //     // let lowerCaseITem = toLowerCase(searchItem)
 //     // let lowerCaseList = fnList.map(lowerCaseList >= {
@@ -61,6 +65,8 @@ removeButton.addEventListener("click", function() {
 })
 
 
+
+// Used to make sure task one and two were complete
 //  shoppingList = ["apple", "banana", "appleton", "kiwi", "applebottom"]
 //  let mysearch = "apple"
 //  console.log(filteritems(shoppingList, mysearch))
