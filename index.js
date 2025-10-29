@@ -58,7 +58,6 @@ listButton.addEventListener("click", function () {
 });
 removeButton.addEventListener("click", function() {
     returnList.removeChild(returnList.lastChild)
-    console.log(returnList)
 })
 
 
